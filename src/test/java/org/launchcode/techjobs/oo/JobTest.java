@@ -57,4 +57,28 @@ public class JobTest {
                 "Core Competency: Persistence" + System.lineSeparator();
         assertEquals(expected, testJob.toString());
     }
+
+    @Test
+    public void testToStringHandlesEmptyField(){
+        Job testJob = new Job("Product tester", new Employer(), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+        String expected = System.lineSeparator() +
+                "ID: " + testJob.getId() + System.lineSeparator() +
+                "Name: Product tester" + System.lineSeparator() +
+                "Employer: Data not available" + System.lineSeparator() +
+                "Location: Desert" + System.lineSeparator() +
+                "Position Type: Quality control" + System.lineSeparator() +
+                "Core Competency: Persistence" + System.lineSeparator();
+        assertEquals(expected, testJob.toString());
+    }
+
+    //@Test
+    /*public void testToStringHandlesEmptyField(){
+        Job testJob = new Job("Product tester", new Employer(), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+        String expected = System.lineSeparator() +
+                "OOPS! This job does not seem to exist" + System.lineSeparator();
+        assertEquals(expected, testJob.toString());
+
+
+    }*/
+
 }

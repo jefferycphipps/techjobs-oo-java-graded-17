@@ -109,22 +109,22 @@ public class Job {
         else
             printName = this.name;
 
-        if (this.employer==null||this.employer.getValue()=="")
+        if (this.employer==null||this.employer.getValue()==""||this.employer.getValue()==null)
             printEmployer = "Data not available";
         else
             printEmployer = this.employer.getValue();
 
-        if (this.location==null||this.location.getValue()=="")
+        if (this.location==null||this.location.getValue()==""||this.location.getValue()==null)
             printLocation = "Data not available";
         else
             printLocation = this.location.getValue();
 
-        if (this.positionType==null||this.positionType.getValue()=="")
+        if (this.positionType==null||this.positionType.getValue()==""||this.positionType.getValue()==null)
             printPosition = "Data not available";
         else
             printPosition = this.positionType.getValue();
 
-        if (this.coreCompetency==null||this.coreCompetency.getValue()=="")
+        if (this.coreCompetency==null||this.coreCompetency.getValue()==""||this.coreCompetency.getValue()==null)
             printCore = "Data not available";
         else
             printCore = this.coreCompetency.getValue();
