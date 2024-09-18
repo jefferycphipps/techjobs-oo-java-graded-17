@@ -8,6 +8,7 @@ import java.lang.reflect.Method;
 /**
  * Created by LaunchCode
  */
+@SuppressWarnings("ALL")
 public class AbstractTest {
 
     protected Class getClassByName(String className) throws ClassNotFoundException {
